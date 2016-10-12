@@ -1,0 +1,417 @@
+#game-container{
+	position: absolute;
+	overflow:hidden;
+	width:568px;
+	height:320px;
+	left: 0px;
+	top: 0px;
+}
+
+.gamebg{
+	background-image:url("gameBG_iPhone.jpg");
+	position: absolute;
+	width:568px;
+	height:320px;
+	left:0px;
+	top:0px;
+}
+
+.reels{
+	position:absolute;
+	overflow:hidden;
+    width:568px;
+    height:212px;
+    left:0px;
+    top:43px;
+}
+
+#reel1{
+	position: absolute;
+	width:102px;
+    left:91px;
+}
+
+#reel2{
+	position: absolute;
+	width:102px;
+	left:169px;
+}
+
+#reel3{
+	position: absolute;
+	width:102px;
+	left:247px;
+}
+
+#reel4{
+	position: absolute;
+	width:102px;
+    left:326px;
+}
+
+#reel5{
+	position: absolute;
+	width:102px;
+	left:401px;
+}
+
+.reel-top{
+	top: -742px;
+}
+
+.reel-spin{
+	top: -742px;
+	-webkit-animation: reel-spin 2s cubic-bezier(0.46, 0.1, 0.63, 1.35);
+}
+
+.image1{
+	background-image: url("kirk_iPhone.png");
+	position: absolute;
+	width:80px;
+	height:128px;
+	z-index:1;
+	left:-6px;
+	-webkit-transform: translateY(-62px);
+}
+
+.image2{
+	background-image: url("khan_iPhone.png");
+	position: absolute;
+	width:80px;
+	height:128px;
+	z-index:1;
+	-webkit-transform: translate(-5px, -63px);
+}
+
+.image3{
+	background-image: url("bonus_iPhone.png");
+	position: absolute;
+	width:89px;
+	height:75px;
+	left:-20px;
+	z-index:1;
+	-webkit-transform: translate(10px, -13px);
+}
+
+.image4{
+	background-image: url("warp_iPhone.png");
+	position: absolute;
+	width:76px;
+	height:52px;
+	-webkit-transform: translateX(-3px);
+}
+
+.image5{
+	background-image: url("wild_iPhone.png");
+	position: absolute;
+	width:70px;
+	height:50px;
+}
+
+.out{
+	z-index:1;
+}
+
+.sprite{
+	background-image:url("explosionsprite_iPhone.png");
+	width:205px;
+	height:205px;
+	position:absolute;
+	-webkit-transform:scale(0);
+	-webkit-animation:move 1s steps(32) infinite, appear 6s linear alternate;
+}
+
+.explosionsprite{
+    left:26px;
+    top:72px;
+}
+
+.explosionsprite2{
+    left:259px;
+    top:123px;
+}
+
+.explosionsprite3{
+    left:332px;
+    top:71px;
+}
+
+.wildstar{
+	background-image:url("wildstar_iPhone.png");
+	width:60px;
+	height:47px;
+	position:absolute;
+	opacity:0;
+	-webkit-animation:shine .3s ease-in-out infinite alternate;
+}
+
+.star1{
+	left:97px;
+    top:149px;
+}
+
+.star2{
+    left:332px;
+    top:203px;
+}
+
+.star3{
+	left:407px;
+    top:149px;
+}
+
+.image6{
+	background-image: url("eel_iPhone.jpg");
+	position: absolute;
+	width:76px;
+	height:52px;
+}
+
+.image7{
+	background-image: url("genesis_iPhone.png");
+	position: absolute;
+	width:76px;
+	height:60px;
+	-webkit-transform: translateY(-8px);
+}
+
+.image8{
+	background-image: url("enterprise_iPhone.png");
+	position: absolute;
+	width:83px;
+	height:52px;
+	z-index:1;
+	-webkit-transform: translateX(-3px);
+}
+
+.image9{
+	background-image: url("reliant_iPhone.jpg");
+	position: absolute;
+	width:76px;
+	height:52px;
+}
+
+.image10{
+	background-image: url("tube_iPhone.jpg");
+	position: absolute;
+	width:76px;
+	height:53px;
+}
+
+.image11{
+	background-image: url("phaser_iPhone.jpg");
+	position: absolute;
+	width:77px;
+	height:53px;
+}
+
+.image12{
+	background-image: url("necklace_iPhone.jpg");
+	position: absolute;
+	width:77px;
+	height:52px;
+}
+
+.bluebar{
+	background-image:url("bluebar_iPhone.png");
+	width:0px;
+	height:15px;
+	position:absolute;
+    left:357px;
+    top:4px;
+}
+
+.bar1{
+	-webkit-animation:bar1 1s forwards;
+}
+
+.bar2{
+	-webkit-animation:bar2 1s forwards;
+}
+
+.bar3{
+	-webkit-animation:bar3 1s forwards;
+}
+
+.box{
+	position:absolute;
+    width:78px;
+    height:57px;
+    z-index:2;
+    box-shadow:1px 1px 2px black;
+}
+
+.rb1{
+    left:89px;
+    top:199px;
+    border:3px solid #ba0101;
+}
+
+.rb2{
+	left:167px;
+    top:147px;
+    border:3px solid #ba0101;
+}
+
+.rb3{
+	left:244px;
+    top:147px;
+    border:3px solid #ba0101;
+}
+
+.pb1{
+    left:89px;
+    top:147px;
+    border:3px solid #cf01d6;
+}
+
+.pb2{
+    left:165px;
+    top:199px;
+    border:3px solid #cf01d6;
+}
+
+.pb3{
+    left:243px;
+    top:199px;;
+    border:3px solid #cf01d6;
+}
+
+.pb4{
+    left:321px;
+    top:199px;
+    border:3px solid #cf01d6;
+}
+
+.pb5{
+    left:399px;
+    top:147px;
+    border:3px solid #cf01d6;
+}
+
+.rline1{
+	position:absolute;
+    z-index:2;
+    width:44px;
+    left:321px;
+    top:174px;
+    border:2px solid #ba0101;
+    box-shadow:1px 1px 2px black;
+}
+
+.rline2{
+	position:absolute;
+	z-index:2;
+	width:99px;
+    left:363px;
+    top:174px;
+    border:2px solid #ba0101;
+    box-shadow:1px 1px 2px black;
+    -webkit-transform:rotate(32deg);
+    -webkit-transform-origin-x:0;
+}
+
+.num{
+	font-family: 'PT Sans', sans-serif;
+	font-size:9px;
+	position:absolute;
+	color:white;
+	text-align:center;
+    width:190px;
+    left:127px;
+    top:278px;
+    letter-spacing:1px;
+    font-weight:bold;
+    text-shadow:1px 1px 1px #5b00ff;
+}
+
+.total{
+    font-size:13px;
+    left:113px;
+    top:3px;
+}
+
+.win{
+    font-size:13px;
+    left:202px;
+    top:296px;
+}
+
+.bet{
+    font-size:13px;
+    left:83px;
+    top:296px;
+}
+
+.betup{
+	background-image:url("betup_iPhone.png");
+	position:absolute;
+	width:15px;
+	height:23px;
+    left:220px;
+    top:291px;
+}
+
+.betdown{
+	background-image:url("betdown_iPhone.png");
+	position:absolute;
+	width:15px;
+	height:23px;
+	left:121px;
+    top:291px;
+}
+
+.click{
+	-webkit-animation:click .2s alternate;
+}
+
+.spin{
+	background-image:url("spin_iPhone.png");
+	position: absolute;
+	width:52px;
+	height:36px;
+    left:420px;
+    top:280px;
+    -webkit-filter: brightness(.5);
+    -webkit-animation:blink .7s linear infinite;
+}
+
+@-webkit-keyframes blink {
+	0% {-webkit-filter: brightness(.5) drop-shadow(0px 0px 0px white);}
+	50%, 80% {-webkit-filter: brightness(1.5) drop-shadow(0px 0px 5px white);}
+}
+
+@-webkit-keyframes reel-spin {
+	50%, 100% {-webkit-transform: translate(0px, 689px);}	
+}
+
+@-webkit-keyframes click {
+	50%, 100% {opacity:0;}	
+}
+
+@-webkit-keyframes bar1 {
+	100% {width:25px;}	
+}
+
+@-webkit-keyframes bar2 {
+	0% {width:25px;}
+	100% {width:40px;}	
+}
+
+@-webkit-keyframes bar3 {
+	0% {width:40px;}
+	100% {width:69px;}	
+}
+
+@-webkit-keyframes appear {
+	20%, 100% {-webkit-transform:scale(1);}	
+}
+
+@-webkit-keyframes move {
+	100% {background-position:-6554px;}	
+}
+
+@-webkit-keyframes shine {
+	100% {opacity:1;}	
+}
+

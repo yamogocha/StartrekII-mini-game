@@ -1,0 +1,107 @@
+/********** OUTRO SPECIFIC CSS **********/
+#main-container {
+	width: 1024px;
+	height: 768px;
+	position: absolute;
+}
+.container {
+	width: 1024px;
+	height: 768px;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+}
+#outro-container {
+	background-image: url('BG_iPadLand.jpg');
+	background-size: 1024px 768px;
+	display: none;
+}
+#animation-container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#mnectarbranding {
+	background-image: url('mNectarBrand_1024x52.png');
+	width: 1024px;
+	height: 52px;
+	top: 708px;
+	position: absolute;
+}
+/*function that defines the animation to be called later. It also defines the parameters and animation deforms. 
+http://www.w3schools.com/css/css3_animations.asp*/
+@-webkit-keyframes pulse {
+	from {-webkit-transform: scale(1);}
+	to {-webkit-transform: scale(.8);}
+}
+#bottom-button {
+	position: absolute;
+}
+#top-button {
+	width: 440px;
+	height: 146px;
+	position: absolute;
+	border-radius:25px;
+	left: 292px;
+	/*animation is called. This is in a very specific order. 1. animation name 2. duration 3. animation easing 4. delay 5. pattern*/
+	animation: pulse 1.5s ease-in-out 1s infinite alternate;
+}
+.mng-install-click-url {
+	position: absolute;
+	width: 1004px;
+	height: 658px;
+	top: 100px;
+	left: 10px;
+}
+.mng-idle-click-url {
+	position: absolute;
+	width: 440px;
+	height: 146px;
+	left: 292px;
+	top: 346px;
+}
+.mng-error-click-url {
+	position: absolute;
+	width: 330px;
+	height: 126px;
+	top: 516px;
+	left: 347px;
+}
+.mng-install-idle {
+	background-image: url('CTA_iPadLand.jpg');
+	top: 346px;
+}
+.mng-install-dl {
+	background-image: url('CTA_iPadLand.jpg');
+	top: 347px;
+}
+/*The thanks will be removed for a midcore game:*/
+.mng-install-thanks {
+	width:459px;
+	height:110px;
+	background-image: url('Thanks_iPadLand.png');
+	left:281px;
+    top:224px;
+}
+.mng-idle-retry {
+	width:330px;
+	height:168px;
+	border-radius:25px;
+	background-image: url('IdleRetry_iPadLand.jpg');
+	left: 347px;
+	top: 524px;
+}
+.mng-error-dl {
+	width: 330px;
+	height: 126px;
+	border-radius:20px;
+	background-image: url('DLerror_iPadLand.jpg');
+	left: 347px;
+	top: 527px;
+}
+.mng-error-retry {
+	background-image: url('ErrorRetry_iPadLand.jpg');
+	top: 345px;
+}
+/********** OUTRO SPECIFIC CSS **********/

@@ -1,0 +1,417 @@
+#game-container{
+	position: absolute;
+	overflow:hidden;
+	width:1024px;
+	height:768px;
+	left: 0px;
+	top: 0px;
+}
+
+.gamebg{
+	background-image:url("gameBG_iPad.jpg");
+	position: absolute;
+	width:1024px;
+	height:768px;
+	left:0px;
+	top:0px;
+}
+
+.reels{
+	position:absolute;
+	overflow:hidden;
+	width:1024px;
+    height:506px;
+    left:0px;
+    top:104px;
+}
+
+#reel1{
+	position: absolute;
+	width:102px;
+    left:44px;
+}
+
+#reel2{
+	position: absolute;
+	width:102px;
+	left:233px;
+}
+
+#reel3{
+	position: absolute;
+	width:102px;
+	left:420px;
+}
+
+#reel4{
+	position: absolute;
+	width:102px;
+    left:608px;
+}
+
+#reel5{
+	position: absolute;
+	width:102px;
+	left:795px;
+}
+
+.reel-top{
+	top: -1764px;
+}
+
+.reel-spin{
+	top: -1764px;
+	-webkit-animation: reel-spin 2s cubic-bezier(0.46, 0.1, 0.63, 1.35);
+}
+
+.image1{
+	background-image: url("kirk_iPad.png");
+	position: absolute;
+	width:192px;
+	height:315px;
+	z-index:1;
+	left:-6px;
+	-webkit-transform: translateY(-151px);
+}
+
+.image2{
+	background-image: url("khan_iPad.png");
+	position: absolute;
+	width:192px;
+	height:307px;
+	z-index:1;
+	-webkit-transform: translateY(-151px);
+}
+
+.image3{
+	background-image: url("bonus_iPad.png");
+	position: absolute;
+	width:216px;
+	height:178px;
+	left:-20px;
+	z-index:1;
+	-webkit-transform: translateY(-29px);
+}
+
+.image4{
+	background-image: url("warp_iPad.png");
+	position: absolute;
+	width:181px;
+	height:126px;
+}
+
+.image5{
+	background-image: url("wild_iPad.png");
+	position: absolute;
+	width:181px;
+	height:126px;
+}
+
+.out{
+	z-index:1;
+}
+
+.sprite{
+	background-image:url("explosionsprite_iPad.png");
+	width:512px;
+	height:512px;
+	position:absolute;
+	-webkit-transform:scale(0);
+	-webkit-animation:move 1s steps(32) infinite, appear 6s linear alternate;
+}
+
+.explosionsprite{
+    left:-121px;
+    top:164px;
+}
+
+.explosionsprite2{
+    left: 441px;
+    top: 296px;
+}
+
+.explosionsprite3{
+    left: 627px;
+    top: 172px;
+}
+
+.wildstar{
+	background-image:url("wildstar_iPad.png");
+	width:119px;
+	height:94px;
+	position:absolute;
+	opacity:0;
+	-webkit-animation:shine .3s ease-in-out infinite alternate;
+}
+
+.star1{
+	left:76px;
+    top:370px;
+}
+
+.star2{
+    left:640px;
+    top:497px;
+}
+
+.star3{
+    left:827px;
+    top:370px;
+}
+
+.image6{
+	background-image: url("eel_iPad.jpg");
+	position: absolute;
+	width:183px;
+	height:126px;
+}
+
+.image7{
+	background-image: url("genesis_iPad.png");
+	position: absolute;
+	width:183px;
+	height:143px;
+	-webkit-transform: translateY(-21px);
+}
+
+.image8{
+	background-image: url("enterprise_iPad.png");
+	position: absolute;
+	width:197px;
+	height:126px;
+	z-index:1;
+	left:-6px;
+}
+
+.image9{
+	background-image: url("reliant_iPad.jpg");
+	position: absolute;
+	width:182px;
+	height:126px;
+}
+
+.image10{
+	background-image: url("tube_iPad.jpg");
+	position: absolute;
+	width:183px;
+	height:126px;
+}
+
+.image11{
+	background-image: url("phaser_iPad.jpg");
+	position: absolute;
+	width:183px;
+	height:126px;
+}
+
+.image12{
+	background-image: url("necklace_iPad.jpg");
+	position: absolute;
+	width:183px;
+	height:125px;
+}
+
+.bluebar{
+	background-image:url("bluebar_iPad.png");
+	width:0px;
+	height:29px;
+	position:absolute;
+	left:688px;
+	top:11px;
+}
+
+.bar1{
+	-webkit-animation:bar1 1s forwards;
+}
+
+.bar2{
+	-webkit-animation:bar2 1s forwards;
+}
+
+.bar3{
+	-webkit-animation:bar3 1s forwards;
+}
+
+.box{
+	position:absolute;
+    width:189px;
+    height:131px;
+    z-index:2;
+    box-shadow: 2px 2px 2px black;
+}
+
+.rb1{
+	left:44px;
+    top:479px;
+    border:5px solid #ba0101;
+}
+
+.rb2{
+	left:229px;
+    top:350px;
+    border:5px solid #ba0101;
+}
+
+.rb3{
+	left:416px;
+    top:350px;
+    border:5px solid #ba0101;
+}
+
+.pb1{
+    left:44px;
+    top:354px;
+    border:5px solid #cf01d6;
+}
+
+.pb2{
+    left:229px;
+    top:481px;
+    border:5px solid #cf01d6;
+}
+
+.pb3{
+    left:416px;
+    top:481px;
+    border:5px solid #cf01d6;
+}
+
+.pb4{
+    left:603px;
+    top:481px;
+    border:5px solid #cf01d6;
+}
+
+.pb5{
+    left:790px;
+    top:354px;
+    border:5px solid #cf01d6;
+}
+
+.rline1{
+	position:absolute;
+    z-index:2;
+    width:116px;
+    left:600px;
+    top:411px;
+    border:3px solid #ba0101;
+    box-shadow: 2px 2px 2px black;
+}
+
+.rline2{
+	position:absolute;
+	z-index:2;
+    width:224px;
+    left:714px;
+    top:411px;
+    border:3px solid #ba0101;
+    box-shadow:2px 2px 2px black;
+    -webkit-transform:rotate(32deg);
+    -webkit-transform-origin-x:0;
+}
+
+.num{
+	font-family: 'PT Sans', sans-serif;
+	font-size:18px;
+	position:absolute;
+	color:white;
+	text-align:center;
+    width:360px;
+    left:169px;
+    top:673px;
+    letter-spacing:2px;
+    font-weight:bold;
+    text-shadow:2px 1px 2px #5b00ff;
+}
+
+.total{
+    font-size:29px;
+    left:151px;
+    top:7px;
+}
+
+.win{
+    font-size:29px;
+    left:364px;
+    top:712px;
+}
+
+.bet{
+    font-size:29px;
+    left:75px;
+    top:711px;
+}
+
+.betup{
+	background-image:url("betup_iPad.png");
+	position:absolute;
+	width:35px;
+	height:52px;
+    left:352px;
+    top:701px;
+}
+
+.betdown{
+	background-image:url("betdown_iPad.png");
+	position:absolute;
+	width:34px;
+	height:52px;
+    left:118px;
+    top:701px;
+}
+
+.click{
+	-webkit-animation:click .2s alternate;
+}
+
+.spin{
+	background-image:url("spin_iPad.png");
+	position: absolute;
+	width:122px;
+	height:79px;
+	left:834px;
+    top:676px;
+    -webkit-filter: brightness(.5);
+    -webkit-animation:blink .7s linear infinite;
+}
+
+@-webkit-keyframes blink {
+	0% {-webkit-filter: brightness(.5) drop-shadow(0px 0px 0px white);}
+	50%, 80% {-webkit-filter: brightness(1.5) drop-shadow(0px 0px 5px white);}
+}
+
+@-webkit-keyframes reel-spin {
+	50%, 100% {-webkit-transform: translate(0px, 1638px);}	
+}
+
+@-webkit-keyframes click {
+	50%, 100% {opacity:0;}	
+}
+
+@-webkit-keyframes bar1 {
+	100% {width:45px;}	
+}
+
+@-webkit-keyframes bar2 {
+	0% {width:45px;}
+	100% {width:80px;}	
+}
+
+@-webkit-keyframes bar3 {
+	0% {width:80px;}
+	100% {width:140px;}	
+}
+
+@-webkit-keyframes appear {
+	20%, 100% {-webkit-transform:scale(1);}	
+}
+
+@-webkit-keyframes move {
+	100% {background-position:-16384px;}	
+}
+
+@-webkit-keyframes shine {
+	100% {opacity:1;}	
+}
+
+
